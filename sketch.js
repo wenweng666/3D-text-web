@@ -19,7 +19,7 @@ let OUTLINE_COLOR = [255,30]; // 前後輪廓線的顏色 [R, G, B]
 let STRUT_COLOR = [0,80]; // 中間支架線的顏色 [R, G, B]
 
 function preload() {
-  font = loadFont("fonts/ZenDots-Regular.ttf");
+  font = loadFont("ZenDots-Regular.ttf");
 }
 
 function setup() {
