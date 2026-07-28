@@ -17,6 +17,7 @@ let TILT_X = 0.15; // 固定的 X 軸傾斜角度
 let TILT_Z = 0.1; // 固定的 Z 軸傾斜角度
 let OUTLINE_COLOR = [255,30]; // 前後輪廓線的顏色 [R, G, B]
 let STRUT_COLOR = [0,80]; // 中間支架線的顏色 [R, G, B]
+let AUTO_ROTATE_SPEED = 0.003; 
 
 function preload() {
   font = loadFont("ZenDots-Regular.ttf");
@@ -52,7 +53,7 @@ function setup() {
 }
 
 function draw() {
-
+  rotationY += AUTO_ROTATE_SPEED; 
   push();
   rotateY(rotationY);
   rotateX(TILT_X);
